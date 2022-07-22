@@ -4,7 +4,6 @@ export default function componentName(props) {
 
   let spin = props.search === 'no search' && !props.spin ?
               <div className="giffSelected">
-                {/* <h1>Search Giphy</h1> */}
               </div> :
             props.spin === true ?
               <div className='spinner'>

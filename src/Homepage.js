@@ -1,15 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUserAuth } from "./Auth";
-import {url1, url2} from './config'
-import Axios from 'axios';
-
-import Spinner from './components/Spinner'
-import Giffs from './components/Giffs'
-import Footer from './components/Footer'
-import GiffSelected from './components/GiffSelected'
-import Header from './components/Header'
 import Giphy from './Giphy';
+
 
 function Homepage  ()  {
   const { logOut, user } = useUserAuth();
@@ -24,16 +17,18 @@ function Homepage  ()  {
   };
   return (
     <>
-    <div className='home'>
+    <div className='home' style={{width:"500px" }}>
       <div className="p-4 box mt-3 text-center">
-        Hello Welcome <br />
+        Hello! <br />
+        Welcome <br />
         {user && user.email}
-      </div>
-      <div className="d-grid gap-2">
-        <button type="button" class="btn btn-primary btn-sm" variant="primary" onClick={handleLogout}>
+        <div className="d-grid gap-2">
+        <button type="button" class="btn btn-primary btn-sm" variant="primary" style={{width:"400px"}} onClick={handleLogout}>
           Log out
         </button>
       </div>
+      </div>
+      
       </div>
       <div>
         <Giphy />

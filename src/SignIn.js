@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-//import GoogleButton from "react-google-button";
 import { useUserAuth } from "./Auth";
 
 function SignIn(){
@@ -20,16 +19,6 @@ function SignIn(){
         navigate("/home");
       } catch (err) {
         setError(err.message);
-      }
-    };
-  
-    const handleGoogleSignIn = async (e) => {
-      e.preventDefault();
-      try {
-        await googleSignIn();
-        navigate("/home");
-      } catch (error) {
-        console.log(error.message);
       }
     };
   
@@ -63,11 +52,6 @@ function SignIn(){
           </Form>
           <hr />
           <div>
-            {/* <Button
-              className="g-btn"
-              type="dark"
-              onClick={handleGoogleSignIn}
-            /> */}
           </div>
         </div>
         <div className="p-4 box mt-3 text-center">
