@@ -1,6 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUserAuth } from "./Auth";
+import {url1, url2} from './config'
+import Axios from 'axios';
+
+import Spinner from './components/Spinner'
+import Giffs from './components/Giffs'
+import Footer from './components/Footer'
+import GiffSelected from './components/GiffSelected'
+import Header from './components/Header'
+import Giphy from './Giphy';
 
 function Homepage  ()  {
   const { logOut, user } = useUserAuth();
@@ -23,6 +32,9 @@ function Homepage  ()  {
         <button variant="primary" onClick={handleLogout}>
           Log out
         </button>
+      </div>
+      <div>
+        <Giphy />
       </div>
     </>
   );
