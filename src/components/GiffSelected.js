@@ -7,9 +7,8 @@ class GiffSelected extends Component{
     return (
       <div className="giffSelected">
         <div className="card">
-          <p 
-            className="backBtn"
-            onClick={()=> this.props.goBack()}>Go back</p>
+          <button type="button" class="btn btn-secondary btn-sm" 
+            onClick={()=> this.props.goBack()}>Go back</button>
           <img className="card-img-top" 
           src={this.props.giff[0].image_url} alt="samp" />
           <div className="card-body">

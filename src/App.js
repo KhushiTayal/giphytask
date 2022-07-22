@@ -11,7 +11,7 @@ import './App.css';
 const App = () => {
 
 	return (
-    <Container style={{ width: "400px" }}>
+    <Container >
       <Row>
         <Col>
           <UserAuthContextProvider>

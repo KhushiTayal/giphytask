@@ -36,7 +36,7 @@ function SignIn(){
     return (
       <>
         <div className="p-4 box">
-          <h2 className="mb-3">Firebase Auth Login</h2>
+          <h2 className="mb-3">Login to your Account</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -63,11 +63,11 @@ function SignIn(){
           </Form>
           <hr />
           <div>
-            <Button
+            {/* <Button
               className="g-btn"
               type="dark"
               onClick={handleGoogleSignIn}
-            />
+            /> */}
           </div>
         </div>
         <div className="p-4 box mt-3 text-center">

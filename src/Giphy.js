@@ -64,11 +64,7 @@ class Giphy extends Component{
     })
   }
 
-
   render(){
-
-
-    
     return (
       <div className="Giphy">
         <div className="top">
@@ -92,7 +88,6 @@ class Giphy extends Component{
                   goBack={()=> this.setState({body: 'search'})}
                   giff={this.state.giffSelected}/> : null}
           </div>
-
           {/* footer */}
           <Footer />
 

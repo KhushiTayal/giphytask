@@ -24,14 +24,16 @@ function Homepage  ()  {
   };
   return (
     <>
+    <div className='home'>
       <div className="p-4 box mt-3 text-center">
         Hello Welcome <br />
         {user && user.email}
       </div>
       <div className="d-grid gap-2">
-        <button variant="primary" onClick={handleLogout}>
+        <button type="button" class="btn btn-primary btn-sm" variant="primary" onClick={handleLogout}>
           Log out
         </button>
+      </div>
       </div>
       <div>
         <Giphy />

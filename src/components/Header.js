@@ -23,7 +23,7 @@ class Header extends Component {
     return (
       <div className="header flex">
       <div className="headContainer">
-        <h1 className="">Giff Searcher</h1>
+        <h1 className="">  Fun GIPHY</h1>
         <div className="input-group mb-3 btnInput">
           <input 
             type="text" 
